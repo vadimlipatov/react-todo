@@ -40,7 +40,7 @@ export default class App extends Component {
     const newItem = {
       label: body,
       important: false,
-      id: this.state.data.length + 1,
+      id: Math.random(0,99999999)
     };
     const newArr = [newItem, ...this.state.data];
     this.setState(() => {
